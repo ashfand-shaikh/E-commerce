@@ -1,0 +1,38 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg head-foot">
+    <div class="container-fluid">
+      <a class="navbar-brand header-txt" style="" href="{% url 'home' %}">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+
+        <form class="d-flex" method="get" action="#">
+            <input id="SearchBar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+            <button class="btn btn-outline-secondary hov" type="submit">Search</button>
+        </form>
+
+
+        <div class="form-inline my-2 my-lg-0">
+
+          <span class="header-txt">Hello, {{ request.user.full_name }}</span>
+
+          <a href="{% url 'cart' %}">
+            <img class="head-img" src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-cart-love-flatart-icons-outline-flatarticons.png"/>
+          </a>
+          <p id="cart-total" style="background-color: #d9d9d9;border-radius: 50%; color: black; display: inline;">{{ cartItems }}</p>
+          <a href="{% url 'profile' %}">
+            {% if request.user.profile_pic %}
+              <img class="head-img" src="{{ request.user.profile_pic.url }}">
+            {% else %}
+              <img class="head-img" src="{% static  'images/default_image.png' %}"">
+            {% endif %}
+          </a>
+          <a href="{% url "logout" %}" class="btn btn-outline-secondary hov">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>

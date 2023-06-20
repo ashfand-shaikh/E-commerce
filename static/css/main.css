@@ -1,0 +1,99 @@
+body{
+    background-color: #ECECF9
+}
+
+.head-foot{
+    background-color: #9A9ACA;
+}
+
+.hov:hover{
+    background-color: #5151A5;
+}
+
+.heading{
+    color: #9595D7;
+    font: 1em sans-serif;
+}
+
+.header-txt{
+    color: #59597C;
+}
+
+.btn{
+    color: #595980;
+    border-radius: 10px; 
+    margin: 10px
+}
+
+.card{
+    margin-bottom: 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+    background-color: #DEDEF4;
+    padding: 15px;
+}
+
+.head-img{
+    height: 40px;
+    width: 40px;
+    margin:10px;
+    border-radius: 50%;
+}
+
+#SearchBar{
+    height: 40px;
+    margin: auto;
+}
+
+.row-image{
+	width: 100px;
+}
+
+.box-element{
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 10px 10px 10px grey;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.up-down{
+    color: #595980;
+    border-radius: 10px; 
+    margin: 10px
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+}
+
+.hidden{
+	display: none!important;
+}
+
+.profile-pic{
+    max-width: 200px;
+    max-height:200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
